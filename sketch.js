@@ -57,7 +57,7 @@ function setup() {
 
   gato = createSprite(960, 730);
   gato.addImage("normal", gatoImg);
-  gato.debug = true;
+  gato.debug = false;
   gato.setCollider("rectangle", 0, 0, 200, 320);  
 
   
@@ -103,7 +103,7 @@ function comidasAleatorias() {
     comidas = createSprite(random(100, 1910), 0, 100, 100);
     comidas.velocityY = 6;
     comidas.scale = 0.5;
-    comidas.debug = true
+    comidas.debug = false;
     comidas.setCollider("rectangle", 0, 0, 150, 220);
     var rand = Math.round(random(1,5));
     switch(rand){
